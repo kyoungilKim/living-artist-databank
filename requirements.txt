@@ -1,0 +1,48 @@
+# 🎵 Living Artist Databank - Python Dependencies
+# 방송작가를 위한 AI 기반 아티스트 데이터뱅크 시스템
+
+# === 코어 라이브러리 ===
+requests==2.31.0              # HTTP 요청 처리
+python-dotenv==1.0.0          # 환경변수 관리
+schedule==1.2.0               # 작업 스케줄링
+
+# === 데이터베이스 ===
+pymongo==4.6.0                # MongoDB 연동
+motor==3.3.2                  # 비동기 MongoDB 드라이버
+
+# === API 연동 ===
+notion-client==2.2.1          # Notion API 연동
+python-lastfm==0.4.0          # Last.fm API 연동
+openai==1.12.0                # OpenAI GPT API
+
+# === 데이터 처리 ===
+pandas==2.1.4                 # 데이터 분석 및 처리
+numpy==1.26.3                 # 수치 계산
+beautifulsoup4==4.12.2        # 웹 스크래핑
+lxml==4.9.4                   # XML/HTML 파싱
+
+# === Google Cloud ===
+google-cloud-functions==1.13.3  # Cloud Functions
+google-cloud-scheduler==2.13.1  # Cloud Scheduler
+google-cloud-secret-manager==2.16.4  # Secret Manager
+
+# === 유틸리티 ===
+python-dateutil==2.8.2       # 날짜/시간 처리
+pytz==2023.3                  # 시간대 처리
+colorama==0.4.6               # 터미널 색상 출력
+tqdm==4.66.1                  # 진행률 표시
+
+# === 개발/테스트 도구 ===
+pytest==7.4.4                # 단위 테스트
+black==23.12.1                # 코드 포맷팅
+flake8==7.0.0                 # 코드 린팅
+
+# === 방송 콘텐츠 특화 ===
+python-Levenshtein==0.25.0    # 문자열 유사도 비교
+wordcloud==1.9.2              # 워드클라우드 생성
+matplotlib==3.8.2             # 데이터 시각화
+seaborn==0.13.1               # 통계 시각화
+
+# === 보안 ===
+cryptography==42.0.0          # 암호화
+bcrypt==4.1.2                 # 패스워드 해싱
