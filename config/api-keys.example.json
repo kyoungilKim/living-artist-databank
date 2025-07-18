@@ -1,0 +1,66 @@
+{
+  "설명": "이 파일은 API 키 템플릿입니다. 실제 키는 .env 파일에 보관하세요!",
+  "주의사항": "절대 실제 API 키를 여기에 입력하지 마세요!",
+  
+  "mongodb": {
+    "connection_string": "mongodb+srv://username:password@cluster.mongodb.net/artist_database",
+    "database_name": "artist_databank",
+    "collection_name": "artists"
+  },
+  
+  "apis": {
+    "lastfm": {
+      "api_key": "여기에_lastfm_api_키_입력",
+      "api_secret": "여기에_lastfm_secret_입력",
+      "username": "lastfm_사용자명"
+    },
+    
+    "notion": {
+      "integration_token": "secret_여기에_notion_토큰_입력",
+      "database_id": "여기에_notion_데이터베이스_id_입력",
+      "page_id": "여기에_notion_페이지_id_입력"
+    },
+    
+    "openai": {
+      "api_key": "sk-여기에_openai_키_입력",
+      "model": "gpt-4",
+      "max_tokens": 1000
+    },
+    
+    "google_cloud": {
+      "project_id": "여기에_구글클라우드_프로젝트_id",
+      "credentials_file": "path/to/service-account-key.json",
+      "region": "asia-northeast3"
+    }
+  },
+  
+  "settings": {
+    "data_collection": {
+      "update_frequency": "daily",
+      "max_artists_per_run": 100,
+      "trending_threshold": 0.7,
+      "backup_enabled": true
+    },
+    
+    "content_generation": {
+      "ai_creativity_level": "high",
+      "content_types": ["방송기획안", "아티스트분석", "트렌드리포트"],
+      "language": "korean",
+      "target_audience": "방송제작진"
+    },
+    
+    "notifications": {
+      "email_alerts": true,
+      "slack_webhook": "여기에_슬랙_웹훅_url",
+      "daily_summary": true,
+      "trending_alerts": true
+    }
+  },
+  
+  "방송작가_전용설정": {
+    "콘텐츠_카테고리": ["음악방송", "토크쇼", "다큐멘터리", "예능"],
+    "타겟_연령층": ["10대", "20대", "30대", "40대이상"],
+    "프로그램_길이": ["5분", "15분", "30분", "60분"],
+    "기획_우선순위": ["화제성", "독창성", "시청률", "화반성"]
+  }
+}
